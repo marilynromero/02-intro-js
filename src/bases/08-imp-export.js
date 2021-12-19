@@ -12,18 +12,18 @@ import {heroes} from './data/heroes';
 //     });
 // }
 
-const getHeroById = (id) => {
+export const getHeroeById = (id) => {
     return heroes.find( (heroe) => heroe.id === id);
 }
 
-console.log(getHeroById(2));
+// console.log(getHeroById(2));
 
 
-const getHeroesByOwner = ( owner ) => {
+export const getHeroesByOwner = ( owner ) => {
     return owner.filter((heroe) => heroe.owner === owner);
 }
 
-console.log(getHeroesByOwner('DC'));
+// console.log(getHeroesByOwner('DC'));
 
 
 
